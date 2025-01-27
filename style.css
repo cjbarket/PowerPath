@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url('AnotherBackground.avif') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+}
+
+.loading-container {
+    text-align: left;
+    margin-left: 20px;
+    padding: 20px;
+}
+
+h1 {
+    text-shadow: 2px 2px 0 black, -2px -2px 0 black, -2px 2px 0 black, 2px -2px 0 black;
+    font-size: 3em; /* Increase the font size of the title */
+}
+
+p {
+    text-shadow: 2px 2px 0 black, -2px -2px 0 black, -2px 2px 0 black, 2px -2px 0 black;
+    font-size: 1em; /* Decrease the font size of the description */
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.list-container {
+    color: gray; /* Change the text color to gray */
+    position: absolute;
+    top: 75%; /* Move the list 25% down from the top */
+    right: 10%;
+}
+
+.list-container ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.list-container li {
+    font-size: 1.5em;
+}
