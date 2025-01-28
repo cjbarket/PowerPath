@@ -2,11 +2,11 @@
 
 body {
     margin: 0;
-    padding: 0;
+    padding: 20px 0 0 0; /* Add padding to the top */
     height: 100vh;
     display: flex;
-    align-items: center;
-    background: url('AnotherBackground.avif') no-repeat center center fixed;
+    align-items: flex-start; /* Align items to the top */
+    background: url('blacjbg.jpeg') no-repeat center center fixed;
     background-size: cover;
     font-family: 'Roboto', sans-serif;
     color: white;
@@ -17,12 +17,34 @@ body {
     justify-content: space-between;
     width: 100%;
     padding: 20px;
+    flex-wrap: wrap; /* Allow wrapping of flex items */
 }
 
 .loading-container {
     text-align: left;
-    margin-left: 20px;
     padding: 20px;
+    width: 50%;
+    margin-left: 0;
+    margin-right: auto;
+    margin-bottom: 30%;
+    margin-top: 5%;
+}
+
+.loading-container h1 {
+    font-family: 'Arial', sans-serif; /* Change the font family */
+    font-size: 4em; /* Increase the font size */
+    text-shadow: 2px 2px 0 black, -2px -2px 0 black, -2px 2px 0 black, 2px -2px 0 black;
+    margin-bottom: 0;
+    margin-top: 5%;
+}
+
+.loading-container h4 {
+    font-family: 'Georgia', serif; /* Change the font family */
+    font-size: 5em; /* Increase the font size */
+    font-style: italic; /* Make the font italic */
+    text-shadow: 2px 2px 0 black, -2px -2px 0 black, -2px 2px 0 black, 2px -2px 0 black;
+    margin-top: 0; /* Remove top margin */
+    margin-bottom: 0;
 }
 
 h1 {
@@ -51,17 +73,65 @@ p {
 }
 
 .list-container {
-    color: gray; /* Change the text color to gray */
-    position: absolute;
-    top: 75%; /* Move the list 25% down from the top */
-    right: 10%;
+    color: rgb(171, 162, 162); /* Change the text color to gray */
+    position: relative; /* Change to relative for better control */
+    top: 0; /* Reset top position */
+    right: 0; /* Reset right position */
+    width: 40%;
+    text-align: right; /* Align text to the right */
+    margin-top: 20px; /* Add margin to separate from the loading container */
 }
 
 .list-container ul {
-    list-style-type: disc;
-    padding-left: 20px;
+    list-style-type: none;
+    padding-left: 0; /* Remove left padding */
 }
 
 .list-container li {
-    font-size: 1.5em;
+    font-size: 1.25em;
+    color: white;
+    text-shadow: 2px 2px 0 black, -2px -2px 0 black, -2px 2px 0 black, 2px -2px 0 black;
+}
+
+.list-container h1 {
+    color: white;
+    text-shadow: 2px 2px 0 black, -2px -2px 0 black, -2px 2px 0 black, 2px -2px 0 black;
+    font-size: 3em; /* Adjust the font size as needed */
+    margin-top: 0; /* Remove top margin */
+}
+
+.softball-player-image {
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: 5%;
+}
+
+.list-container h3 {
+    color: white;
+    text-shadow: 2px 2px 0 black, -2px -2px 0 black, -2px 2px 0 black, 2px -2px 0 black;
+    font-size: 1em; /* Adjust the font size as needed */
+    text-align: right; /* Align text to the right */
+    margin-right: 25%; /* Adjust as needed */
+    margin-bottom: 0; /* Remove bottom margin to make it closer to the title */
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack containers vertically */
+        align-items: center; /* Center align items */
+        margin: 0;
+    }
+
+    .loading-container, .list-container {
+        width: 90%; /* Full width for both containers */
+        text-align: center; /* Center align text */
+        padding: 10px; /* Adjust padding to fit within the screen */
+        margin-top: 5%;
+    }
+
+    .list-container {
+        margin-top: 10%; /* Add margin to separate from the loading container */
+    }
 }
