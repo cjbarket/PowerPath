@@ -126,7 +126,7 @@ p {
     color: white;
     text-shadow: 1px 1px 2px black; /* Adjust text shadow for better readability */
     font-size: 2em; /* Adjust the font size as needed */
-    margin-top: 0; /* Remove top margin */
+    margin-top: 50%; /* Remove top margin */
 }
 
 .softball-player-image {
